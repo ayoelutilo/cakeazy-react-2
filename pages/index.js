@@ -22,6 +22,7 @@ export default function Index(lazyProps) {
   const classes = useStyles()
   const [state] = useLazyState(lazyProps)
 
+  console.log
   return (
     <>
       {state.loading ? null : (
@@ -37,7 +38,7 @@ export default function Index(lazyProps) {
             <Typography variant="h3" component="h1" gutterBottom color="primary">
               {state.pageData.slots.heading}
             </Typography>
-            <CmsSlot>{state.pageData.slots.description}</CmsSlot>
+            <CmsSlot>￼</CmsSlot>
           </div>
         )}
       </Container>
